@@ -1,0 +1,258 @@
+.vista-alta {
+    min-height: 100vh;
+    padding: 20px;
+
+    background-color: #ddd;
+    background-image: url("../img/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vista-alta h1,
+.vista-alta h2 {
+    text-align: center;
+}
+
+
+.alta-form {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 20px auto;
+    padding: 30px;
+
+    background-color: #c22727;
+    color: white;
+
+    border: 1px dashed white;
+    border-radius: 20px;
+}
+
+.input-group {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.alta-form label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.alta-form label[for="envio"] {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.alta-form input {
+    width: 70%;
+    min-height: 30px;
+
+    padding: 5px 8px;
+
+    background-color: #e6aa02;
+
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+
+.alta-form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.alta-form button {
+    display: block;
+
+    width: 30%;
+    min-width: 180px;
+    height: 40px;
+
+    margin: 15px auto;
+
+    background-color: white;
+    color: #130f40;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.mensaje-validacion {
+    display: block;
+
+    width: 70%;
+    margin: 5px auto 0;
+
+    font-size: 14px;
+    text-align: left;
+}
+
+.mensaje-error {
+    color: #fff0f0;
+}
+
+.mensaje-correcto {
+    color: #baffc2;
+}
+
+.alta-form .campo-invalido {
+    border: 2px solid #7a0012;
+    background-color: #ffd9de;
+}
+
+.alta-form .campo-valido {
+    border: 2px solid #167a2f;
+    background-color: #e5ffe9;
+}
+
+#resultado-alta {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 15px auto;
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.resultado-exito {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #9acfa7;
+}
+
+.resultado-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #e3a6ac;
+}
+
+
+
+.responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.vista-alta table {
+    margin: 5px auto;
+
+    border-collapse: collapse;
+
+    background-color: rgba(194, 39, 39, 0.5);
+    color: white;
+}
+
+.vista-alta th,
+.vista-alta td {
+    min-width: 100px;
+    height: 40px;
+
+    padding: 10px;
+
+    border: 1px solid black;
+}
+
+.vista-alta th {
+    background-color: #111;
+    color: white;
+
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.vista-alta td {
+    font-size: 18px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .vista-alta {
+        padding: 15px;
+    }
+
+    .alta-form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .alta-form input {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .mensaje-validacion {
+        width: 90%;
+    }
+
+    .alta-form button {
+        width: 70%;
+    }
+
+    .vista-alta th,
+    .vista-alta td {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .vista-alta th {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vista-alta {
+        padding: 10px;
+    }
+
+    .alta-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .alta-form input {
+        width: 100%;
+    }
+
+    .mensaje-validacion {
+        width: 100%;
+    }
+
+    .alta-form button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.vista-previa-foto {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin-top: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.vista-previa-foto.oculto {
+    display: none;
+}

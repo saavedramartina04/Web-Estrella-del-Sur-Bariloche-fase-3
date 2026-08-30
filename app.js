@@ -1,0 +1,16 @@
+const path = require("path")
+const express = require("express")
+const productos = require("./routes/productos.routes")
+const carrito = require("./routes/carrito.routes")
+const { rutaNoEncontrada, manejarError } = require("./middlewares/error.middleware")
+const app = express()
+
+app.use(express.json({ limit: "8mb" }))
+app.use(express.static(path.join(__dirname, "public")))
+app.use("/api/productos", productos)
+app.use("/api/carrito", carrito)
+app.get("/api/salud", (req, res) => res.json({ estado: "ok" }))
+app.use("/api", rutaNoEncontrada)
+app.get("*splat", (req, res) => res.sendFile(path.join(__dirname, "public", "index.html")))
+app.use(manejarError)
+module.exports = app

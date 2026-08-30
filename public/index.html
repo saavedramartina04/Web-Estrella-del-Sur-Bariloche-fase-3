@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrella Del Sur Bariloche</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/alta.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+            <li><a href="#" data-vista="inicio">Inicio</a></li>
+            <li><a href="#" data-vista="alta">Alta</a></li>
+            <li><a href="#" data-vista="contacto">Contacto</a></li>
+            <li><a href="#" data-vista="nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="logo">
+                <img id="logoImg" src="https://tse4.mm.bing.net/th/id/OIP.wv2d2v2DPNYNOPvkn3qm_gHaHa?pid=Api&P=0&h=180" alt="">
+            </div>
+
+            <div id="barrabusqueda">
+                <form action="#">
+                    <label for="buscar">Buscar</label>
+                    <input type="text" id="buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+
+            <div id="boton-carrito">🛒</div>
+            <div id="modal-carrito" class="modal-carrito oculto">
+            <div class="contenido-carrito">
+                <button id="cerrar-carrito">X</button>
+                <h2>Mi carrito</h2>
+
+                <div id="items-carrito"></div>
+
+                <h3 id="total-carrito">Total: $0</h3>
+
+                <button id="confirmar-compra">Confirmar compra</button>
+            </div>
+</div>
+        </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer-principal">
+        <div class="footer-contenido">
+            <section class="footer-columna footer-identidad">
+                <h2>CLUB ESTRELLA DEL SUR</h2>
+                <p>Pasión, esfuerzo y comunidad en Bariloche.</p>
+                <a class="footer-contacto" href="#" data-vista="contacto">Contactanos</a>
+            </section>
+
+            <section class="footer-columna">
+                <h2>INFORMACIÓN</h2>
+                <nav class="footer-enlaces" aria-label="Enlaces del pie de página">
+                    <a href="#" data-vista="inicio">Inicio</a>
+                    <a href="#" data-vista="nosotros">Sobre el club</a>
+                    <a href="#" data-vista="contacto">Contacto</a>
+                </nav>
+            </section>
+
+            <section class="footer-columna">
+                <h2>SÍGUENOS</h2>
+                <div class="footer-redes">
+                    <a
+                        href="https://www.instagram.com/estrelladelsur.bariloche"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram de Estrella del Sur"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle class="relleno" cx="17.5" cy="6.5" r="1"></circle>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/clubestrelladelsur/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook de Estrella del Sur"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v6h4v-6h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"></path>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-inferior">
+            <p>&copy; 2026 Club Estrella del Sur. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<div id="mensaje-carrito" class="mensaje-carrito"></div>
+<script src="js/productos.js"></script>
+<script src="js/api.js"></script>
+<script src="js/inicio.js"></script>
+<script src="js/alta.js"></script>
+<script src="js/contacto.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/spa.js"></script>
+
+</body>
+</html>

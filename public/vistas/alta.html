@@ -1,0 +1,85 @@
+<section class="vista-alta">
+    <h1>Alta de productos</h1>
+
+    <form action="#" class="alta-form" novalidate>
+
+        <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre">
+        </div>
+
+        <div class="input-group">
+            <label for="precio">Precio</label>
+            <input id="precio" step="any" type="number" name="precio">
+        </div>
+
+        <div class="input-group">
+            <label for="stock">Stock</label>
+            <input id="stock" type="number" name="stock">
+        </div>
+
+        <div class="input-group">
+            <label for="marca">Marca</label>
+            <input id="marca" type="text" name="marca">
+        </div>
+
+        <div class="input-group">
+            <label for="categoria">Categoría</label>
+            <input id="categoria" type="text" name="categoria">
+        </div>
+
+        <div class="input-group">
+            <label for="descripcion-corta">Descripción corta</label>
+            <input
+                id="descripcion-corta"
+                type="text"
+                name="descripcion-corta"
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="descripcion-larga">Descripción larga</label>
+            <input
+                id="descripcion-larga"
+                type="text"
+                name="descripcion-larga"
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="edad-desde">Edad desde</label>
+            <input id="edad-desde" type="number" name="edad-desde">
+        </div>
+
+        <div class="input-group">
+            <label for="edad-hasta">Edad hasta</label>
+            <input id="edad-hasta" type="number" name="edad-hasta">
+        </div>
+
+        <div class="input-group">
+            <label for="foto">Foto</label>
+            <input
+                id="foto"
+                type="file"
+                name="foto"
+                accept="image/jpeg,image/png,image/webp,image/gif"
+            >
+            <img id="vista-previa-foto" class="vista-previa-foto oculto" alt="Vista previa de la foto">
+        </div>
+
+        <div class="input-group input-envio">
+            <input id="envio" type="checkbox" name="envio">
+            <label for="envio">Envío bonificado</label>
+        </div>
+
+        <button type="submit">Agregar un producto</button>
+    </form>
+
+    <hr>
+
+    <h2>Listado de productos disponibles</h2>
+
+    <div class="responsive">
+        <table></table>
+    </div>
+</section>
